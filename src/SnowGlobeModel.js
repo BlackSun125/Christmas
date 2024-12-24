@@ -33,7 +33,7 @@ export default function SnowGlobeModel(props) {
   const raycaster = new THREE.Raycaster()
 
   function useGsapContext(scope) {
-    const ctx = useMemo(() => gsap.context(() => {}, scope), [scope])
+    const ctx = useMemo(() => gsap.context(() => { }, scope), [scope])
     return ctx
   }
 
@@ -122,18 +122,17 @@ function Texts() {
   return (
     <>
       <Text3D letterSpacing={0.06} size={0.3} font="/Inter_Bold.json" position={[-2.8, 3.3, 10]}>
-        ANDERSON MANCINI
         <meshPhysicalMaterial metalness={0.2} roughness={0.2} color={'#a1a1a1'} />
       </Text3D>
       <Billboard>
         <Text font="/DancingScript-VariableFont_wght.ttf" maxWidth={3.5} textAlign="center" position={[0, 12.45, 0]} fontSize="0.35" lineHeight={0.85}>
-          Wishing you a restful holiday season. {'\n\n'}May your Christmas be blessed with lots of love, peace, and happiness.
+          Chúc mom có một mùa Giáng Sinh thật ấm áp và tràn đầy hạnh phúc!{'\n\n'}Mong mọi điều may mắn sẽ đến với mom trong năm mới!.
         </Text>
         <Text maxWidth={2.5} textAlign="center" position={[0, 11.2, 0]} fillOpacity={0.6} fontSize="0.1">
-          I will be on vacation until January 8th. Thank you for all your support in 2023. Great things are coming in 2024. Please stay tunned.
+          Mong là mom sẽ luôn cười luôn vui vẻ, nỗi buồn nào có tới thì cũng sẽ nhanh qua. Vui vẻ nha người đẹp nhóe!!
         </Text>
         <Text maxWidth={1.5} textAlign="center" position={[0, 10.8, 0]} fontSize="0.08">
-          Anderson Mancini
+          Khoa Ngô
         </Text>
       </Billboard>
     </>
